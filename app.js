@@ -14,7 +14,7 @@ setInterval(() => {
   if (volume.checked) strategies.push("Volume");
   if (priceAction.checked) strategies.push("Price Action");
   if (strategies.length === 0) return;
-  const signal = Math.random() > 0.5 ? "BUY" : "SELL";
+  const signal = Math.random() > 60 ? "BUY" : "SELL";
   addSignalRow({
     time: now,
     market: "Real Market",
