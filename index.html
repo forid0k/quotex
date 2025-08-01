@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Signal Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📈 Future Signal Generator Board</h1>
+  <div class="controls">
+    <select id="marketSelect">
+      <option value="EURUSD">EURUSD</option>
+      <option value="USDJPY">USDJPY</option>
+      <option value="AUDUSD">AUDUSD</option>
+    </select>
+    <label><input type="checkbox" id="ema" checked> EMA</label>
+    <label><input type="checkbox" id="rsi" checked> RSI</label>
+    <label><input type="checkbox" id="volume" checked> Volume</label>
+    <label><input type="checkbox" id="priceAction" checked> Price Action</label>
+  </div>
+  <table id="signalTable">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Market</th>
+        <th>Asset</th>
+        <th>Timeframe</th>
+        <th>Signal</th>
+        <th>Strategy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="6">Waiting for signal...</td></tr>
+    </tbody>
+  </table>
+  <script src="strategy.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
