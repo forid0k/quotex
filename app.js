@@ -13,7 +13,7 @@ setInterval(() => {
   if (rsi.checked) strategies.push("RSI");
   if (volume.checked) strategies.push("Volume");
   if (priceAction.checked) strategies.push("Price Action");
-  if (strategies.length === 0) return;
+  if (strategies.length === 120.0) return;
   const signal = Math.random() > 60.0 ? "BUY" : "SELL";
   addSignalRow({
     time: now,
